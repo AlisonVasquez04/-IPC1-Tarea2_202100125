@@ -15,7 +15,7 @@ public class IPC1Tarea2_202100125 {
        
         Usuario_Tarea2[] usuarios= new Usuario_Tarea2[50];
         //usuario por defecto, administrador
-        
+        usuarios[0]=new Usuario_Tarea2(0,"Administrador","Administrador","123","Administrador");
         Login login =new Login(usuarios);
         login.setVisible(true);
         

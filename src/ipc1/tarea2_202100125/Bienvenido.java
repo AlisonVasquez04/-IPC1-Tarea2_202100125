@@ -19,6 +19,7 @@ public class Bienvenido extends javax.swing.JFrame {
        this.usuarios = usuarios;
         initComponents();
         Nombre.setText(this.nombre);
+        this.setLocationRelativeTo(null);
        
     }
 //Informacion de la tabla 
@@ -58,19 +59,19 @@ public class Bienvenido extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(510, 0, 70, 60);
+        setMaximumSize(new java.awt.Dimension(579, 470));
+        setPreferredSize(new java.awt.Dimension(579, 470));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 70, 60));
 
         jLabel3.setFont(new java.awt.Font("Bauhaus 93", 0, 36)); // NOI18N
         jLabel3.setText("¡Bienvenido!");
         jLabel3.setToolTipText("");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(160, 10, 230, 40);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 230, 40));
 
         Nombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        getContentPane().add(Nombre);
-        Nombre.setBounds(170, 50, 210, 20);
+        getContentPane().add(Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 210, 20));
 
         tabla.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         tabla.setModel(new javax.swing.table.DefaultTableModel(
@@ -83,12 +84,10 @@ public class Bienvenido extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tabla);
 
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(40, 90, 480, 320);
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 480, 320));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipc1/tarea2_202100125/imagen/fondo3.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 580, 430);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 430));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

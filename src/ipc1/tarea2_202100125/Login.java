@@ -14,6 +14,7 @@ public class Login extends javax.swing.JFrame {
     public Login(Usuario_Tarea2 usuarios[]) {
         this.usuarios = usuarios;
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -25,7 +26,6 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -35,44 +35,39 @@ public class Login extends javax.swing.JFrame {
         secreto = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().setLayout(null);
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(290, 50, 120, 110);
+        setMaximumSize(new java.awt.Dimension(431, 380));
+        setPreferredSize(new java.awt.Dimension(431, 380));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("LOGIN");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(170, 0, 90, 30);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 90, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipc1/tarea2_202100125/imagen/fondo1.jpg"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(200, 0, 230, 30);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 230, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipc1/tarea2_202100125/imagen/fondo1.jpg"))); // NOI18N
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(-30, 0, 230, 30);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 230, 30));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setText("Usuario:");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(40, 90, 88, 29);
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 88, 29));
 
         user.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        getContentPane().add(user);
-        user.setBounds(70, 130, 180, 30);
+        getContentPane().add(user, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 180, 30));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setText("Contraseña:");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(40, 180, 110, 30);
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 110, 30));
 
         secreto.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         secreto.addActionListener(new java.awt.event.ActionListener() {
@@ -80,8 +75,7 @@ public class Login extends javax.swing.JFrame {
                 secretoActionPerformed(evt);
             }
         });
-        getContentPane().add(secreto);
-        secreto.setBounds(70, 220, 180, 30);
+        getContentPane().add(secreto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 180, 30));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -92,18 +86,19 @@ public class Login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(160, 290, 103, 31);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 120, -1));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Cancelar");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(290, 290, 110, 31);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipc1/tarea2_202100125/imagen/fondo 2.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, -110, 430, 460);
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipc1/tarea2_202100125/imagen/fondo 2.jpg"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 340));
+
+        jPanel1.add(jLabel1);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 340));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -134,11 +129,14 @@ public class Login extends javax.swing.JFrame {
                     Bienvenido inicio = new Bienvenido(usuarios[i].getNombre(),usuarios);
                     inicio.setVisible(true);
                     break;
-                 }
+                 }else {
+                    System.out.println("El usuario incorrecto");
+                    break;
+                }  
                  
             }
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
     /**
      * @param args the command line arguments
      */
@@ -148,22 +146,22 @@ public class Login extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+  //      try {
+  //          for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+ //               if ("Nimbus".equals(info.getName())) {
+  //                  javax.swing.UIManager.setLookAndFeel(info.getClassName());
+ //                   break;
+ //               }
+ //           }
+  //      } catch (ClassNotFoundException ex) {
+  //          java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+  //          java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+  //      } catch (IllegalAccessException ex) {
+   //         java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+     //   } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+     //       java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      //  }
         //</editor-fold>
 
         /* Create and display the form */
@@ -171,7 +169,7 @@ public class Login extends javax.swing.JFrame {
  //     java.awt.EventQueue.invokeLater(new Runnable() {
    //         public void run() {
   //              new Login().setVisible(true);
-            }
+ //           
             
   //      });
   //  }
@@ -186,6 +184,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField secreto;
     private javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables
